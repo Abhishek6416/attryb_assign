@@ -29,7 +29,7 @@ const SignupForm = () => {
 
         try {
             // Send a POST request to the registration endpoint
-            const response = await fetch('https://amused-yoke-hen.cyclic.app/users/register', {
+            const response = await fetch('https://lovely-ruby-sarong.cyclic.cloud/users/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

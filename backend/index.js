@@ -17,7 +17,7 @@ const { oemRoute } = require("./route/oemRoute");
 
 // home route
 app.get("/", async (req, res) => {
-    res.status(200).send("Welcome to BUYC Corp Backend");
+    res.status(200).send("Welcome toBackend Server");
 })
 
 // redirect routes

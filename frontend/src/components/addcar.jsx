@@ -53,7 +53,7 @@ const AddCarForm = () => {
 
         try {
             // Making the POST request to the API endpoint
-            const response = await fetch('https://amused-yoke-hen.cyclic.app/inventory/add', {
+            const response = await fetch('https://lovely-ruby-sarong.cyclic.cloud/inventory/add', {
                 method: 'POST',
                 headers,
                 body: JSON.stringify(requestBody),

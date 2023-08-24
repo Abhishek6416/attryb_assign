@@ -14,7 +14,7 @@ const Inventory = () => {
 
 
     const fetchInventory = async () => {
-        const url = `https://amused-yoke-hen.cyclic.app/inventory?sort=${sortOption}&filterByColor=${filterColor}`;
+        const url = `https://lovely-ruby-sarong.cyclic.cloud/inventory?sort=${sortOption}&filterByColor=${filterColor}`;
         try {
             const response = await fetch(url);
             if (response.ok) {
@@ -41,7 +41,7 @@ const Inventory = () => {
         const token = localStorage.getItem('token');
         if (token) {
             try {
-                const response = await fetch(`https://amused-yoke-hen.cyclic.app/inventory/${id}`, {
+                const response = await fetch(`https://lovely-ruby-sarong.cyclic.cloud/inventory/${id}`, {
                     headers: {
                         Authorization: token,
                     },
@@ -154,7 +154,7 @@ const Inventory = () => {
         const token = localStorage.getItem('token');
         if (token && id) {
             try {
-                const response = await fetch(`https://amused-yoke-hen.cyclic.app/inventory/update/${id}`, {
+                const response = await fetch(`https://lovely-ruby-sarong.cyclic.cloud/inventory/update/${id}`, {
                     method: 'PATCH',
                     headers: {
                         'Content-Type': 'application/json',
@@ -188,7 +188,7 @@ const Inventory = () => {
         const token = localStorage.getItem('token');
         if (token) {
             try {
-                const response = await fetch(`https://amused-yoke-hen.cyclic.app/inventory/delete/${id}`, {
+                const response = await fetch(`https://lovely-ruby-sarong.cyclic.cloud/inventory/delete/${id}`, {
                     method: 'DELETE',
                     headers: {
                         Authorization: token,
