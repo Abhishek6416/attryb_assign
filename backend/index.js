@@ -13,6 +13,7 @@ const { connection } = require("./config/db");
 const { userRoute } = require("./route/userRoute");
 const { inventoryRoute } = require("./route/inventoryRoute");
 const { oemRoute } = require("./route/oemRoute");
+const DB_CONNECT = require("./config/db");
 
 
 // home route
@@ -25,16 +26,6 @@ app.use("/users", userRoute)
 app.use("/oemspecs", oemRoute)
 app.use("/inventory", inventoryRoute)
 
+DB_CONNECT();
 
-
-app.listen(8000, async (req, res) => {
-    try {
-        await connection;   // connecting to Database
-        console.log("DB is connected")
-    }
-    catch (error) {
-        console.log("DB is not connected", error)
-    }
-    console.log(`Listening at Port ${8000}`)
-})
-
+app.listen(8000,()=>console.log("server run"));

@@ -12,6 +12,7 @@ const { UserModel } = require("../model/userModel");
 
 // to register user and then hashing password using Bcrypt
 userRoute.post("/register", async (req, res) => {
+    console.log(req.body)
     const { name, email, password } = req.body
     const userFound = await UserModel.findOne({ email })
     if (userFound) {

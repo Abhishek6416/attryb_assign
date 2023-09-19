@@ -24,7 +24,7 @@ const SigninForm = ({ onLoginSuccess }) => {
 
         try {
             // Send a POST request to the login endpoint
-            const response = await fetch('https://lovely-ruby-sarong.cyclic.cloud/users/login', {
+            const response = await fetch('http://localhost:8000/users/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
