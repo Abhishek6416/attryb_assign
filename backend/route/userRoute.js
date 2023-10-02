@@ -51,7 +51,7 @@ userRoute.post("/login", async (req, res) => {
         });
     }
     catch (err) {
-        res.status(500)({ "ERROR": err })
+        res.status(500)({ "ERROR": err.message })
     }
 })
 
